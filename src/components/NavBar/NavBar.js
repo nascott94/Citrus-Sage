@@ -8,6 +8,7 @@ export default function NavBar() {
       <div id="top-header">
         <div className="container clearfix"></div>
       </div>
+
       <div className="top">
         <div className="topCenter">
           <ul className="topList">
@@ -15,17 +16,20 @@ export default function NavBar() {
               <Link className="nav-link1 topListItem" to="/">
                 Home
               </Link>
-              <Link className="nav-link1 topListItem" to="/me">
-                Profile
+              <Link className="nav-link1 topListItem" to="/projects">
+                Projects
               </Link>
-              <Link className="nav-link1 topListItem" to="/signup">
-                Sign Up
+              <Link className="nav-link1 topListItem" to="/services">
+                Services
               </Link>
-              <Link className="nav-link1 topListItem" to="/login">
-                Login
+              <Link className="nav-link1 topListItem" to="/about">
+                About
               </Link>
-              <Link className="nav-link1 topListItem" to="/">
-                Logout
+              <Link className="nav-link1 topListItem" to="/testimonials">
+                Testimonials
+              </Link>
+              <Link className="nav-link1 topListItem" to="/contact">
+                Contact
               </Link>
             </li>
           </ul>
