@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./components/NavBar/NavBar.js";
-// import Home from "./components/Home/Home.js";
+import Home from "./components/Home/Home.js";
 // import Projects from "./components/Projects/Projects.js";
 // import Services from "./components/Services/Services.js";
 // import About from "./components/About/About.js";
@@ -14,11 +14,11 @@ export default function App() {
     <Router>
       <div className="flex-column justify-flex-start min-100-vh">
         <NavBar />
-        {/* <div className="container">
+        <div className="container">
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/projects">
+          {/* <Route exact path="/projects">
             <Projects />
           </Route>
           <Route exact path="/services">
@@ -32,9 +32,9 @@ export default function App() {
           </Route>
           <Route exact path="/contact">
             <Contact />
-          </Route>
+          </Route> */}
         </div>
-        <Footer /> */}
+        {/* <Footer /> */}
       </div>
     </Router>
   );

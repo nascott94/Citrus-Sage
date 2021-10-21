@@ -14,7 +14,7 @@ div {
   line-height: 1em;
   z-index: 100000;
   color: #fff;
-  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+  font-family: "Cedarville Cursive", cursive;
   width: 100%;
   max-width: 100%;
   padding-right: 30px;
@@ -41,7 +41,7 @@ div {
   display: flex;
   align-items: center;
   z-index: 999;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Cedarville Cursive", cursive;
 }
 
 .topCenter {
@@ -70,7 +70,7 @@ div {
 .nav-link1 {
   color: #293242;
   text-decoration: none;
-  font-size: larger;
+  font-size: 30px;
 }
 
 img {
