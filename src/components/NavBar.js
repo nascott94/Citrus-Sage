@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import csLogo from "../images/logo.png";
+import Background from "../images/background.jpg";
 
 const Container = styled.div`
   height: 50px;
 `;
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +33,8 @@ const Right = styled.div`
 `;
 
 const Image = styled.img`
-  width: 20%;
+  padding-top: 70px;
+  width: 10%;
 `;
 
 const Menu = styled.ul`
@@ -44,8 +46,13 @@ const Menu = styled.ul`
 `;
 const MenuItem = styled.li`
   margin-right: 30px;
-  font-size: 30px;
+  font-size: 25px;
   color: #4e6e47;
+  cursor: pointer;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
 `;
 
 export default function NavBar() {
@@ -68,6 +75,7 @@ export default function NavBar() {
           </Menu>
         </Right>
       </Wrapper>
+      <Image src={Background} />
     </Container>
   );
 }
