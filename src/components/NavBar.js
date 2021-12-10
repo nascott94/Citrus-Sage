@@ -14,14 +14,25 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
-  width: 60%;
+  /* width: 50%; */
+  padding-top: 50px;
+  padding-left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Right = styled.div`
+  /* width: 50%; */
+  padding-top: 50px;
+  padding-right: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
 
 const Image = styled.img`
-  width: 30%;
+  width: 20%;
 `;
 
 const Menu = styled.ul`
@@ -33,8 +44,8 @@ const Menu = styled.ul`
 `;
 const MenuItem = styled.li`
   margin-right: 30px;
-  font-size: 20px;
-  color: black;
+  font-size: 30px;
+  color: #4e6e47;
 `;
 
 export default function NavBar() {
@@ -42,16 +53,20 @@ export default function NavBar() {
     <Container>
       <Wrapper>
         <Left>
-          <Image src={csLogo} />
-          <Menu>
+          <Menu className="menuFont">
             <MenuItem>Home</MenuItem>
             <MenuItem>About</MenuItem>
             <MenuItem>Services</MenuItem>
+          </Menu>
+        </Left>
+        <Image src={csLogo} />
+        <Right>
+          <Menu className="menuFont">
             <MenuItem>Projects</MenuItem>
             <MenuItem>Testimonials</MenuItem>
             <MenuItem>Contact</MenuItem>
           </Menu>
-        </Left>
+        </Right>
       </Wrapper>
     </Container>
   );
