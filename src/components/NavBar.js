@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import csLogo from "../images/logo.png";
-import Background from "../images/background.jpg";
+import React from 'react';
+import styled from 'styled-components';
+import csLogo from '../images/logo.png';
+import Background from '../images/new-background.png';
 
 const Container = styled.div`
   height: 50px;
@@ -46,13 +46,17 @@ const Menu = styled.ul`
 `;
 const MenuItem = styled.li`
   margin-right: 30px;
-  font-size: 25px;
+  font-size: 20px;
   color: #4e6e47;
   cursor: pointer;
   letter-spacing: var(--spacing);
   display: block;
   padding: 0.5rem 1rem;
   transition: var(--transition);
+`;
+
+const BackgroundImage = styled.div`
+  display: flex;
 `;
 
 export default function NavBar() {
@@ -75,7 +79,9 @@ export default function NavBar() {
           </Menu>
         </Right>
       </Wrapper>
-      <Image src={Background} />
+      {/* <BackgroundImage>
+        <img src={Background} objectFit={'cover'} width={1920} height={700} />
+      </BackgroundImage> */}
     </Container>
   );
 }

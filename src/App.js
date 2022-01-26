@@ -1,13 +1,13 @@
-import React from "react";
-import NavBar from "./components/NavBar.js";
-import Home from "./components/Home.js";
-import styled, { css } from "styled-components";
+import React from 'react';
+import NavBar from './components/NavBar.js';
+import Home from './components/Home.js';
+import styled, { css } from 'styled-components';
 
-const Container = styled.div`
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-`;
+// const Container = styled.div`
+//   height: 100vh;
+//   overflow: hidden;
+//   position: relative;
+// `;
 
 const Shape = css`
   width: 100%;
@@ -28,9 +28,7 @@ export default function App() {
   return (
     <div>
       <NavShape />
-      <Container>
-        <NavBar />
-      </Container>
+      <NavBar />
       <Home />
     </div>
   );
